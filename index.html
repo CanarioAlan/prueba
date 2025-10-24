@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit Gym - Tu mejor versión comienza aquí</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PowerFit<span>Gym</span></h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#gallery">Equipamiento</a></li>
+                    <li><a href="#exercises">Ejercicios</a></li>
+                    <li><a href="#membership">Membresías</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>TRANSFORMA TU CUERPO</h1>
+            <h2>TRANSFORMA TU VIDA</h2>
+            <p>Entrenamiento personalizado, equipamiento de última generación y comunidad motivadora</p>
+            <a href="#membership" class="btn btn-primary">COMIENZA HOY</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>SOBRE NOSOTROS</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Tu camino hacia una vida más saludable</h3>
+                    <p>En PowerFit Gym, nos dedicamos a ayudarte a alcanzar tus objetivos fitness, sin importar tu nivel de experiencia. Nuestro equipo de entrenadores certificados diseñará un programa personalizado que se adapte a tus necesidades específicas.</p>
+                    <p>Contamos con instalaciones modernas, equipamiento de última generación y un ambiente motivador que te inspirará a superar tus límites cada día.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>Equipamiento Premium</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Entrenadores Expertos</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Abierto 24/7</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Entrenamiento en PowerFit Gym">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>NUESTRO EQUIPAMIENTO</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="strength">Fuerza</button>
+                <button class="filter-btn" data-filter="functional">Funcional</button>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item" data-category="cardio">
+                    <img src="https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Cinta de correr">
+                    <div class="gallery-item-info">
+                        <h3>Cintas de Correr</h3>
+                        <p>Equipamiento cardiovascular de última generación para mejorar tu resistencia.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="strength">
+                    <img src="https://images.unsplash.com/photo-1638805981949-362f5964521e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Máquina de press de pecho">
+                    <div class="gallery-item-info">
+                        <h3>Máquinas de Fuerza</h3>
+                        <p>Equipamiento especializado para desarrollar cada grupo muscular.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="functional">
+                    <img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Área funcional">
+                    <div class="gallery-item-info">
+                        <h3>Área Funcional</h3>
+                        <p>Espacio dedicado para entrenamiento funcional y de alta intensidad.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="strength">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Pesas libres">
+                    <div class="gallery-item-info">
+                        <h3>Pesas Libres</h3>
+                        <p>Amplia selección de mancuernas, barras y discos para entrenamiento de fuerza.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cardio">
+                    <img src="https://images.unsplash.com/photo-1591291621164-2c6367723315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Bicicletas estáticas">
+                    <div class="gallery-item-info">
+                        <h3>Bicicletas Estáticas</h3>
+                        <p>Bicicletas de última generación para entrenamiento cardiovascular intenso.</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="functional">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="TRX y equipamiento funcional">
+                    <div class="gallery-item-info">
+                        <h3>TRX y Suspensión</h3>
+                        <p>Equipamiento para entrenamiento en suspensión y desarrollo de core.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises" class="exercises">
+        <div class="container">
+            <div class="section-header">
+                <h2>GUÍA DE EJERCICIOS</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="exercises-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="beginner">Principiante</button>
+                <button class="filter-btn" data-filter="intermediate">Intermedio</button>
+                <button class="filter-btn" data-filter="advanced">Avanzado</button>
+            </div>
+            <div class="exercises-container">
+                <div class="exercise-card" data-level="beginner">
+                    <div class="exercise-image">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Sentadillas">
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Sentadillas Básicas</h3>
+                        <span class="level">Principiante</span>
+                        <p>Las sentadillas son uno de los ejercicios más completos para trabajar piernas y glúteos.</p>
+                        <div class="exercise-steps">
+                            <h4>Cómo realizar:</h4>
+                            <ol>
+                                <li>Párate con los pies a la anchura de los hombros</li>
+                                <li>Mantén la espalda recta y el pecho hacia adelante</li>
+                                <li>Baja como si fueras a sentarte en una silla</li>
+                                <li>Regresa a la posición inicial</li>
+                            </ol>
+                        </div>
+                        <button class="btn-video"><i class="fas fa-play-circle"></i> Ver demostración</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-level="intermediate">
+                    <div class="exercise-image">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Press de banca">
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Press de Banca</h3>
+                        <span class="level">Intermedio</span>
+                        <p>Ejercicio fundamental para desarrollar los músculos del pecho, hombros y tríceps.</p>
+                        <div class="exercise-steps">
+                            <h4>Cómo realizar:</h4>
+                            <ol>
+                                <li>Acuéstate en el banco con los pies apoyados en el suelo</li>
+                                <li>Agarra la barra con las manos a una distancia mayor que el ancho de los hombros</li>
+                                <li>Baja la barra hasta rozar el pecho</li>
+                                <li>Empuja la barra hacia arriba hasta extender los brazos</li>
+                            </ol>
+                        </div>
+                        <button class="btn-video"><i class="fas fa-play-circle"></i> Ver demostración</button>
+                    </div>
+                </div>
+                <div class="exercise-card" data-level="advanced">
+                    <div class="exercise-image">
+                        <img src="https://images.unsplash.com/photo-1566241142559-40e1dab266c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Peso muerto">
+                    </div>
+                    <div class="exercise-info">
+                        <h3>Peso Muerto</h3>
+                        <span class="level">Avanzado</span>
+                        <p>Uno de los ejercicios más completos para desarrollar fuerza en la cadena posterior.</p>
+                        <div class="exercise-steps">
+                            <h4>Cómo realizar:</h4>
+                            <ol>
+                                <li>Colócate frente a la barra con los pies a la anchura de las caderas</li>
+                                <li>Flexiona las rodillas y agarra la barra con las manos a la anchura de los hombros</li>
+                                <li>Mantén la espalda recta y levanta la barra extendiendo las piernas y caderas</li>
+                                <li>Baja la barra controladamente hasta el suelo</li>
+                            </ol>
+                        </div>
+                        <button class="btn-video"><i class="fas fa-play-circle"></i> Ver demostración</button>
+                    </div>
+                </div>
+            </div>
+            <div class="exercises-more">
+                <a href="#" class="btn btn-secondary">Ver más ejercicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>MEMBRESÍAS</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Básico</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a sala de musculación</li>
+                            <li><i class="fas fa-check"></i> Horario limitado (8AM - 8PM)</li>
+                            <li><i class="fas fa-check"></i> Evaluación física inicial</li>
+                            <li><i class="fas fa-times"></i> Clases grupales</li>
+                            <li><i class="fas fa-times"></i> Entrenamiento personalizado</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-secondary">Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <div class="popular">Más Popular</div>
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">49</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso ilimitado 24/7</li>
+                            <li><i class="fas fa-check"></i> Todas las áreas del gimnasio</li>
+                            <li><i class="fas fa-check"></i> Evaluación física mensual</li>
+                            <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                            <li><i class="fas fa-times"></i> Entrenamiento personalizado</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-primary">Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Elite</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso ilimitado 24/7</li>
+                            <li><i class="fas fa-check"></i> Todas las áreas del gimnasio</li>
+                            <li><i class="fas fa-check"></i> Evaluación física semanal</li>
+                            <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                            <li><i class="fas fa-check"></i> 4 sesiones de entrenamiento personal/mes</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="#contact" class="btn btn-secondary">Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>CONTACTO</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Av. Fitness 123, Ciudad Deportiva</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@powerfitgym.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes - Domingo: 24 horas</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="" disabled selected>Selecciona un tema</option>
+                                <option value="membership">Información de membresías</option>
+                                <option value="trial">Clase de prueba</option>
+                                <option value="personal">Entrenamiento personal</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PowerFit<span>Gym</span></h2>
+                    <p>Tu mejor versión comienza aquí</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#gallery">Equipamiento</a></li>
+                        <li><a href="#exercises">Ejercicios</a></li>
+                        <li><a href="#membership">Membresías</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras últimas noticias y promociones</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PowerFit Gym. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
